@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@if (TempData["alertMessage"] != null)
+{
+    <h3 style="color: red">@TempData["alertMessage"]</h3>
+}
+
+<partial name="_CategoryList" />
+
